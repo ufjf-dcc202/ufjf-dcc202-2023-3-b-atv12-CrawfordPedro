@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DCC202 - Atividade 12: Pedro Crawford</title>
     <script src="main.js" type="module"></script>
+    <style>
+        input:invalid {
+            border: 1px solid red;
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -14,9 +20,26 @@
         </p>
         <section>
             <form name="entrada">
-                <input name="quantidade" value="5">
-                <input name="fruta" value="Melancias">
-                <input type="submit" name="enviar">
+                <input type="number" name="quantidade" value="5" min="0" max="12">
+
+            <fieldset>
+                <legend>Origem</legend>
+                <label>
+                    <input type="radio" name="origem" value="Maria" checked/>
+                    Maria
+                </label>
+                <label>
+                    <input type="radio" name="origem" value="Joao"ss>
+                    Joao
+                </label>
+            </fieldset>
+                
+                <select name="fruta" value="Melancias">
+                    <option value="maca">Maçã</option>
+                    <option value="banana">Banana</option>s
+                    <option value="mexerica">Mexerica</option>
+                </select>
+                <button type="submit" name="enviar">Enviar</button>
             </form>
         </section>
         <section></section>
