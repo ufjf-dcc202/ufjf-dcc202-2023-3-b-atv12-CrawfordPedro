@@ -1,7 +1,7 @@
-document.entrada.enviar.addEventListener('click', leFormulario);
+document.entrada.addEventListener('submit', leFormulario);
 
-function leFormulario() {
-
+function leFormulario(event) {
+event.preventDefault();
 const quantidade = document.entrada.quantidade.value;
 const fruta = document.entrada.fruta.value;
 
